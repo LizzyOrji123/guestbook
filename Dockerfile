@@ -11,5 +11,5 @@ COPY . /app
 RUN pip install -r requirements.txt
 
 # Command to run the application
-CMD ["gunicorn", "-b", "0.0.0.0:8080", "main:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
 
